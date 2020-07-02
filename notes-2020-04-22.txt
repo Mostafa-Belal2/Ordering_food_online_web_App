@@ -1,0 +1,19 @@
+1. Open Spring Intializer
+2. Generate application with the following dependencies :
+	* spring-web 
+	* spring-data-jpa
+3. Open project in IDE
+4. Add data-source properties in application.properties file
+5. Add your controllers with @RestController
+6. Add your BLL dependency to the pom file
+7. Change your DAL AbastracRepo to depend on EntityManagerFactory instead of SessionFactory
+8. Autowire BusinessLogicGateway in your controllers
+9. Add @ComponentScan for all beans, if beans are in different package
+10. Add @EntityScan for your entites, if beans are in different package
+
+
+Useful URL:
+- https://spring.io/guides
+- https://mkyong.com/tutorials/spring-boot-tutorials/
+- https://www.baeldung.com/hibernate-5-spring
+- https://spring.io/projects/spring-boot#overview
